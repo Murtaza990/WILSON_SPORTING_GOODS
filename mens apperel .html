@@ -1,0 +1,290 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Apperel Cards</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>.shop-btn {
+  background-color: #800000;; /* Light grey */
+  color:white; /* white text */
+  border: none;
+  border-radius: 5px; /* Rounded edges */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 15px;
+    width: 100px;  /* Set a fixed width */
+  transition: all 0.3s ease; /* Smooth hover animation */
+}
+/* shop Button Hover Effect */
+.shop-btn:hover {
+  background-color:#660000; /* Lighter grey on hover */
+  color: #333; 
+  border:2px solid;/* Darker text on hover */
+}</style>
+<body>
+    <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-gradient">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand navbar-brand-bold" href="#">
+        <img id="logo" src="images/nav logo.png" alt="Logo">
+      </a>
+  
+      <!-- Toggler Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light active"  aria-current="page" href="about us.html">About us</a>
+          </li>
+           <!-- Dropdown Menu -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle text-light active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+     Shop
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
+      <li><a class="dropdown-item" href="football.html">Football</a></li>
+      <li><a class="dropdown-item" href="basketball.html">Basketball</a></li>
+      <li><a class="dropdown-item" href="baseball.html">Baseball</a></li>
+      <li><a class="dropdown-item" href="soccer.html">Soccer</a></li>
+      <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+      <li><a class="dropdown-item" href="volleyball.html">Volleybal</a></li>
+      <li><a class="dropdown-item" href="pickleball.html">Pickleball</a></li>
+      <li><a class="dropdown-item" href="paddle.html">Paddle</a></li>
+    </ul>
+  </li>
+          <li class="nav-item">
+            <a class="nav-link text-light active"  aria-current="page"href="#">Contact us</a>
+          </li>
+          
+        <!-- Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light active"  aria-current="page"href="#" id="navbarDropdownBrands" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Brands
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownBrands">
+              <li><a class="dropdown-item" href="ATEC .html">ATEC</a></li>
+              <li><a class="dropdown-item" href="DeMarini .html">DeMarini</a></li>
+              <li><a class="dropdown-item" href="Louisville Slugger .html">Louisville Slugger</a></li>
+              <li><a class="dropdown-item" href="Luxilon .html">Luxilon</a></li>
+            </ul>
+          </li>
+        </ul>
+  
+        <!-- Login Button -->
+        <a href="login form.html"><button class="login-btn">Login</button></a> 
+      </div>
+    </div>
+  </nav>
+    <div class="container my-4">
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleImage(this)">
+                    <img src="images/Easy Street Tee .jpg" class="card-img-top first-img" alt="Tennis Gear">
+                    <img src="images/Easy Street Tee 2.jpg" class="card-img-top second-img" alt="Tennis Gear" style="display:none;">
+                    <div class="card-body">
+                        <p class="card-text">Easy Street Tee</p>
+                        <h5>$69.00</h5>
+                        <button class="shop-btn">Shop</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleImage(this)">
+                    <img src="images/Clairmont Warm-Up Popover .jpg" class="card-img-top first-img" alt="Tennis Balls">
+                    <img src="images/Clairmont Warm-Up Popover 2.jpg" class="card-img-top second-img" alt="Tennis Balls" style="display:none;">
+                    <div class="card-body">
+                        <p class="card-text">Clairmont Warm-Up Popover</p>
+                        <h5>$49.00</h5>
+                        <button class="shop-btn">Shop</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleImage(this)">
+                    <img src="images/Aston Warm-Up Jacket Lite .jpg" class="card-img-top first-img" alt="Shoes">
+                    <img src="images/Aston Warm-Up Jacket Lite 2.jpg" class="card-img-top second-img" alt="Shoes" style="display:none;">
+                    <div class="card-body">
+                        <p class="card-text">Aston Warm-Up Jacket Lite</p>
+                        <h5>$79.99</h5>
+                        <button class="shop-btn">Shop</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleImage(this)">
+                    <img src="images/Game Point Seamless Polo .jpg" class="card-img-top first-img" alt="Accessories">
+                    <img src="images/Game Point Seamless Polo 2.jpg" class="card-img-top second-img" alt="Accessories" style="display:none;">
+                    <div class="card-body">
+                        <p class="card-text">Game Point Seamless Polo</p>
+                        <h5>$54.00</h5>
+                        <button class="shop-btn">Shop</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card" onclick="toggleImage(this)">
+                    <img src="images/Grand Slam Jacket .jpg" class="card-img-top first-img" alt="Apparel">
+                    <img src="images/Grand Slam Jacket 2.jpg" class="card-img-top second-img" alt="Apparel" style="display:none;">
+                    <div class="card-body">
+                        <p class="card-text">Grand Slam Jacket</p>
+                        <h5>$39.00</h5>
+                        <button class="shop-btn">Shop</button>
+                    </div>
+                </div>
+            </div>
+              <!-- Card 6 -->
+              <div class="col-md-4">
+                <div class="card" onclick="toggleImage(this)">
+                    <img src="images/Parkside Crew .jpg" class="card-img-top first-img" alt="Apparel">
+                    <img src="images/Parkside Crew 2.jpg" class="card-img-top second-img" alt="Apparel" style="display:none;">
+                    <div class="card-body">
+                        <p class="card-text">Parkside Crew</p>
+                        <h5>$66.95</h5>
+                        <button class="shop-btn">Shop</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 7 -->
+             <div class="col-md-4">
+                <div class="card" onclick="toggleImage(this)">
+                    <img src="images/Biltmore Cable Knit Polo .jpg" class="card-img-top first-img" alt="Apparel">
+                    <img src="images/Biltmore Cable Knit Polo 2.jpg" class="card-img-top second-img" alt="Apparel" style="display:none;">
+                    <div class="card-body">
+                        <p class="card-text">Biltmore Cable Knit Polo</p>
+                        <h5>$59.95</h5>
+                        <button class="shop-btn">Shop</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 8 -->
+             <div class="col-md-4">
+                <div class="card" onclick="toggleImage(this)">
+                    <img src="images/Gene Knit Polo .jpg" class="card-img-top first-img" alt="Apparel">
+                    <img src="images/Gene Knit Polo 2.jpg" class="card-img-top second-img" alt="Apparel" style="display:none;">
+                    <div class="card-body">
+                        <p class="card-text">Gene Knit Polo</p>
+                        <h5>$50.95</h5>
+                        <button class="shop-btn">Shop</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 9 -->
+             <div class="col-md-4">
+                <div class="card" onclick="toggleImage(this)">
+                    <img src="images/Eastwood Warm-Up Jacket .jpg" class="card-img-top first-img" alt="Apparel">
+                    <img src="images/Eastwood Warm-Up Jacket 2.jpg" class="card-img-top second-img" alt="Apparel" style="display:none;">
+                    <div class="card-body">
+                        <p class="card-text">Eastwood Warm-Up Jacket</p>
+                        <h5>$66.95.</h5>
+                        <button class="shop-btn">Shop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Footer Start -->
+<footer style="background: linear-gradient(to right, rgb(11, 10, 10), rgb(57, 3, 3)); color: white; padding: 40px 0; font-family: Arial, sans-serif;">
+
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+  
+      <!-- Logo Section -->
+      <div style="flex: 1 100%; text-align: center; margin-bottom: 20px;">
+        <img src="images/nav logo.png" alt="Logo" style="max-width: 150px; margin-bottom: 10px;">
+        <h2 style="color: #ffffff; margin: 0; font-size: 1.8em;">Sporting Goods By Willson</h2>
+      </div>
+  
+      <!-- About Section -->
+      <div style="flex: 1; min-width: 250px; margin: 10px;">
+        <h3 style="color: #B0B0B0; margin-bottom: 15px;">About Us</h3>
+        <p>We are your one-stop-shop for high-quality sports gear and equipment. Join us and level up your game!</p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div style="flex: 1; min-width: 150px; margin: 10px;">
+        <h3 style="color:  #B0B0B0; margin-bottom: 15px;">Quick Links</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+          <li><a href="about us.html" style="color: white; text-decoration: none;">About us</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Shop</a></li>
+          <li><a href="contact us.html" style="color: white; text-decoration: none;">Contact Us</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Brands</a></li>
+        </ul>
+      </div>
+  
+      <!-- Newsletter -->
+      <div style="flex: 1; min-width: 250px; margin: 10px;">
+        <h3 style="color:  #B0B0B0; margin-bottom: 15px;">Newsletter</h3>
+        <p>Follow us to stay updated on our latest products and deals!</p>
+        <form action="#">
+          <input type="email" placeholder="Enter your email" style="padding: 10px; width: 50%; border: none; border-radius: 5px;">
+          <button type="submit" style="padding: 10px; width: 30%; background-color:  #6d6d6d; color: white; border: none; border-radius: 5px;">Follow</button>
+        </form>
+      </div>
+  
+      <!-- Contact Section -->
+      <div style="flex: 1; min-width: 250px; margin: 10px;">
+        <h3 style="color:  #B0B0B0; margin-bottom: 15px;">Contact Us</h3>
+        <p>Email: <a href="mailto:support@sportsgoods.com" style="color: white;">willsonsporting@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567890" style="color: white;">+1 234 567 890</a></p>
+      <p>Address:  xyz street,Aptech Garden,Pakistan</p>
+      </div>
+  
+    </div>
+  
+   <!-- Social Media Links -->
+   <i class="fa-brands fa-facebook"></i>
+   <i class="fa-brands fa-instagram"></i>
+   <i class="fa-brands fa-linkedin"></i>
+   <i class="fa-brands fa-twitter"></i>
+  
+  
+    <!-- Copyright -->
+    <div style="text-align: center; margin-top: 20px; border-top: 1px solid #333; padding-top: 10px;">
+      <p>&copy; 2024 Sports Goods | Designed with ❤️ by [Willson]</p>
+    </div>
+  
+  </footer>
+  <!-- Footer End -->
+
+    <!-- Bootstrap JS and Popper.js (for Bootstrap functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        function toggleImage(card) {
+            var firstImg = card.querySelector('.first-img');
+            var secondImg = card.querySelector('.second-img');
+            if (firstImg.style.display === "none") {
+                firstImg.style.display = "block";
+                secondImg.style.display = "none";
+            } else {
+                firstImg.style.display = "none";
+                secondImg.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

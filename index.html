@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Website with Dropdown</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+
+ <!-- Swiper CSS -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+ <!-- Font Awesome for Icons -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+  <style>
+   /* General Swiper Styles */
+.swiper {
+  padding: 20px 0; /* Add some vertical padding */
+  margin: 0 auto; /* Center the Swiper */
+  width: 100%; /* Make sure it takes up full width */
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.swiper-wrapper {
+  display: flex; /* Flexbox to align slides horizontally */
+  justify-content: space-between; /* Space between the slides */
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-slide {
+  flex-shrink: 0; /* Prevent shrinking */
+  width: 32%; /* Adjust to show 3 slides per view */
+  margin: 0 10px; /* Space between each slide */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0; /* Avoid padding within slides */
+}
+
+.swiper-slide img {
+  max-width: 100%; /* Ensure images fit within the slide */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Ensure images fit consistently */
+}
+
+
+
+/* Custom Navigation Buttons */
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* Icon color */
+  border-radius: 50%; /* Make it circular */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next-custom {
+  right: 10px; /* Position to the right */
+}
+
+.swiper-button-prev-custom {
+  left: 10px; /* Position to the left */
+}
+
+/* Hover effect for buttons */
+.swiper-button-next-custom:hover,
+.swiper-button-prev-custom:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+
+
+
+  </style>
+
+ 
+    
+</head>
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-gradient">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand navbar-brand-bold" href="#">
+      <img id="logo" src="images/nav logo.png" alt="Logo">
+    </a>
+
+    <!-- Toggler Button for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light active"  aria-current="page" href="about us.html">About us</a>
+        </li>
+         <!-- Dropdown Menu -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-light active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+   Shop
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
+    <li><a class="dropdown-item" href="football.html">Football</a></li>
+    <li><a class="dropdown-item" href="basketball.html">Basketball</a></li>
+    <li><a class="dropdown-item" href="baseball.html">Baseball</a></li>
+    <li><a class="dropdown-item" href="soccer.html">Soccer</a></li>
+    <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+    <li><a class="dropdown-item" href="volleyball.html">Volleybal</a></li>
+    <li><a class="dropdown-item" href="pickleball.html">Pickleball</a></li>
+    <li><a class="dropdown-item" href="paddle.html">Paddle</a></li>
+  </ul>
+</li>
+        <li class="nav-item">
+          <a class="nav-link text-light active"  aria-current="page" href="contact us.html">Contact us</a>
+        </li>
+        
+      <!-- Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light active"  aria-current="page"href="#" id="navbarDropdownBrands" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Brands
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownBrands">
+            <li><a class="dropdown-item" href="ATEC .html">ATEC</a></li>
+            <li><a class="dropdown-item" href="DeMarini .html">DeMarini</a></li>
+            <li><a class="dropdown-item" href="Louisville Slugger .html">Louisville Slugger</a></li>
+            <li><a class="dropdown-item" href="Luxilon .html">Luxilon</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Login Button -->
+  <a href="login form.html"><button class="login-btn">Login</button></a> 
+    </div>
+  </div>
+</nav>
+
+    <!-- Carousel Section -->
+    <div class="carousel">
+      <div class="slide active">
+          <img src="images/banner1.png" alt="Slide 1">
+          <div class="carousel-text">
+              <h1>"Train Like a Champion, Gear Up Like a Pro."</h1>
+              <p>From practice to victory, we’ve got the tools to fuel your success. </p>
+          </div>
+      </div>
+      <div class="slide">
+          <img src="images/pexels-erik-geiger-34483182-7078119.jpg" alt="Slide 2">
+          <div class="carousel-text">
+              <h1>"Performance Begins with the Right Equipment."</h1>
+              <p>Your goals deserve the best – discover premium sporting gear. </p>
+          </div>
+      </div>
+      <div class="slide">
+          <img src="images/pexels-mikhail-nilov-9366571.jpg" alt="Slide 3">
+          <div class="carousel-text">
+              <h1>"Play Hard, Play Smart, Play with the Best."</h1>
+              <p>Turn your passion into performance with gear that delivers.</p>
+          </div>
+      </div>
+  </div>
+
+<!-- Full-width Card with Custom Height -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">"Exclusive Offer Right Now"</h2>
+    <div class="card w-1200px card-custom-height">
+      <a href="gift .html">
+      <img src="images/gift 1.png" class="card-img-top" alt="Card image">
+    </a>
+    </div>
+  </div>
+
+
+  <!-- Featured Products Section (Cards) -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">New Arrivals Here</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <a href="womens apperel .html">
+          <img src="images/new arrival1.png" class="card-img-top" alt="Product 1">
+        </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card"> 
+          <a href="mens apperel .html">
+          <img src="images/new arrival2.png" class="card-img-top" alt="Product 2">
+        </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="hat .html">
+          <img src="images/new arrival3.png" class="card-img-top" alt="Product 3">
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+    <!-- Header -->
+    <div class="container text-center mt-5">
+    <h1>Welcome to the Sports Shop</h1>
+    <p class="mb-4">Find the best sports gear for your favorite activities.</p>
+
+    <!-- Cards Section -->
+    <div class="row g-4">
+      <!-- Tennis -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <a href="tennis.html">
+            <img src="images/tennis.jpg" class="card-img-top" alt="Tennis">
+          </a>
+          
+        </div>
+      </div>
+
+      <!-- Football -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <a href="football.html">
+          <img src="images/football wallpaper.jpg" class="card-img-top" alt="Football">
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Basketball -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <a href="basketball.html">
+          <img src="images/basketball wallpaper.jpg" class="card-img-top" alt="Basketball">
+        </a>
+        
+        </div>
+      </div>
+
+      <!-- Baseball -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <a href="baseball.html">
+          <img src="images/baseball wallpaper.jpg" class="card-img-top" alt="Baseball">
+        </a>
+        
+        </div>
+      </div>
+
+      <!-- Soccer -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <a href="soccer.html">
+          <img src="images/soccer wallpaper.jpg" class="card-img-top" alt="Soccer">
+        </a>
+        
+        </div>
+      </div>
+
+      <!-- Golf -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <a href="golf.html">
+          <img src="images/golf wallpaper.jpg" class="card-img-top" alt="Golf">
+       </a>
+        </div>
+      </div>
+
+      <!-- Volleyball -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <a href="volleyball.html">
+          <img src="images/volley ball wallpaper.jpg" class="card-img-top" alt="Volleyball">
+        </a>
+        </div>
+         
+      </div> <!-- pickleball -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <a href="pickleball.html">
+          <img src="images/pickleball wallpaper.jpg" class="card-img-top" alt="Pickleball">
+        </a>
+        </div>
+      </div> <!-- pickleball -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <a href="paddle.html">
+          <img src="images/padle wallpaper.jpg" class="card-img-top" alt="Paddle">
+        </a>
+      </div>
+    </div> 
+  <!-- Footer Start -->
+<footer style="background: linear-gradient(to right, rgb(11, 10, 10), rgb(57, 3, 3)); color: white; padding: 40px 0; font-family: Arial, sans-serif;">
+
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+    <!-- Logo Section -->
+    <div style="flex: 1 100%; text-align: center; margin-bottom: 20px;">
+      <img src="images/nav logo.png" alt="Logo" style="max-width: 150px; margin-bottom: 10px;">
+      <h2 style="color: #ffffff; margin: 0; font-size: 1.8em;">Sporting Goods By Willson</h2>
+    </div>
+
+    <!-- About Section -->
+    <div style="flex: 1; min-width: 250px; margin: 10px;">
+      <h3 style="color: #B0B0B0; margin-bottom: 15px;">About Us</h3>
+      <p>We are your one-stop-shop for high-quality sports gear and equipment. Join us and level up your game!</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1; min-width: 150px; margin: 10px;">
+      <h3 style="color:  #B0B0B0; margin-bottom: 15px;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="about us.html" style="color: white; text-decoration: none;">About us</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Shop</a></li>
+        <li><a href="contact us.html" style="color: white; text-decoration: none;">Contact Us</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Brands</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div style="flex: 1; min-width: 250px; margin: 10px;">
+      <h3 style="color:  #B0B0B0; margin-bottom: 15px;">Newsletter</h3>
+      <p>Follow us to stay updated on our latest products and deals!</p>
+      <form action="#">
+        <input type="email" placeholder="Enter your email" style="padding: 10px; width: 50%; border: none; border-radius: 5px;">
+        <button type="submit" style="padding: 10px; width: 30%; background-color:  #6d6d6d; color: white; border: none; border-radius: 5px;">Follow</button>
+      </form>
+    </div>
+
+    <!-- Contact Section -->
+    <div style="flex: 1; min-width: 250px; margin: 10px;">
+      <h3 style="color:  #B0B0B0; margin-bottom: 15px;">Contact Us</h3>
+      <p>Email: <a href="mailto:support@sportsgoods.com" style="color: white;">willsonsporting@gmail.com</a></p>
+      <p>Phone: <a href="tel:+1234567890" style="color: white;">+1 234 567 890</a></p>
+    <p>Address:  xyz street,Aptech Garden,Pakistan</p>
+    </div>
+
+  </div>
+
+ <!-- Social Media Links -->
+ <i class="fa-brands fa-facebook"></i>
+ <i class="fa-brands fa-instagram"></i>
+ <i class="fa-brands fa-linkedin"></i>
+ <i class="fa-brands fa-twitter"></i>
+
+
+  <!-- Copyright -->
+  <div style="text-align: center; margin-top: 20px; border-top: 1px solid #333; padding-top: 10px;">
+    <p>&copy; 2024 Sports Goods | Designed with ❤️ by [Willson]</p>
+  </div>
+
+</footer>
+<!-- Footer End -->
+
+    <!-- Swiper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+  // Swiper for Welcome to Sports Shop
+const swiper = new Swiper('#welcome-swiper', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-button-next-custom',
+    prevEl: '.swiper-button-prev-custom',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    480: {
+      slidesPerView: 1,
+    }
+  },
+});
+
+
+  </script>
+     <!-- JavaScript for Auto Carousel -->
+     <script>
+      let slides = document.querySelectorAll('.slide');
+      let currentIndex = 0;
+
+      function showNextSlide() {
+          // Remove 'active' class from current slide
+          slides[currentIndex].classList.remove('active');
+
+          // Move to the next slide
+          currentIndex = (currentIndex + 1) % slides.length;
+
+          // Add 'active' class to the new slide
+          slides[currentIndex].classList.add('active');
+      }
+
+      // Set interval for automatic slide change
+      setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+  </script>
+ 
+</body>
+</html>
+
+ 

@@ -1,0 +1,362 @@
+
+/* Gradient Background for Navbar */
+.navbar-gradient {
+  background: linear-gradient(45deg, rgb(11, 10, 10), rgb(57, 3, 3));
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Bold Navbar Brand */
+.navbar-brand-bold {
+  font-weight: bold;
+}
+
+/* Active Link Styling */
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* More Specific CSS for Dropdown */
+.navbar .dropdown-menu {
+  background-color: rgb(79, 0, 0); /* Maroon dropdown menu background */
+}
+
+.navbar .dropdown-item {
+  color: white!important; /* Text color for dropdown items */
+}
+
+.navbar .dropdown-item:hover {
+  background-color: rgb(164, 2, 2) !important; /* Darker maroon on hover */
+  color: black!important; /* Keep text color white on hover */
+}
+
+/* Control Logo Size */
+#logo {
+  max-height: 90px;
+  width: 90px;
+  margin-left: 10px;
+}
+
+/* Card Styling */
+.card img {
+  height: 220px;
+  object-fit: cover;
+  margin: 0%;
+  padding:0px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+
+
+ /* Login Button Styling */
+ .login-btn {
+  background-color: #B0B0B0; /* Light grey */
+  color: #000; /* Black text */
+  border: none;
+  border-radius: 5px; /* Rounded edges */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 15px;
+  transition: all 0.3s ease; /* Smooth hover animation */
+}
+
+/* Login Button Hover Effect */
+.login-btn:hover {
+  background-color: #D3D3D3; /* Lighter grey on hover */
+  color: #333; 
+  border:2px solid;/* Darker text on hover */
+}
+/* styles.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Reduce gap if too large */
+}
+
+
+.card {
+  padding: 0; /* Remove or reduce padding */
+  margin: 0; /* Adjust margin if needed */
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin: 0; /* Ensure no extra margin */
+  padding: 0; /* Ensure no extra padding */
+  border-radius: 8px;
+}
+
+
+.card h3 {
+  margin-top:0px;
+  font-size: 1.2rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Category Content */
+.category-content {
+  display: none;
+  margin-top: 50px;
+}
+
+.category-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.category-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.category-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.category-item h4 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+/* Optional: Styling for card hover effect */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/* Card Styles */
+.card {
+  width: 100%; /* Card should take full width of the slide */
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.card img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images fit consistently */
+}/* Container Styles */
+.container {
+  padding: 0; /* Ensure no extra padding */
+  max-width: 100%; /* Ensure the container spans the entire screen */
+  margin: 0 auto; /* Center the Swiper */
+}
+
+
+/* Container Styling */
+.container {
+  margin-top: 50px;
+}
+
+/* Card Styling */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Card Text */
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Card Image */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Maroon Shop Now Button */
+.btn-maroon {
+  background-color: #800000; /* Maroon color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-maroon:hover {
+  background-color: #660000; /* Darker maroon on hover */
+  text-decoration: none;
+}
+
+/* Margin between cards */
+.mb-4 {
+  margin-bottom: 30px;
+}
+
+.carousel-item{
+
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
+}
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Carousel Container */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+/* Individual Slide */
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide.active {
+  display: block;
+  animation: fade 1s ease-in-out;
+}
+
+/* Slide Image */
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Carousel Text */
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.carousel-text p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Fade Animation */
+@keyframes fade {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+/*tenis.html work*/
+/* Customize the Card Image */
+.card-img-top {
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+/* Card Hover Effect */
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Customize the Card Title */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2d2d2d; /* Dark color for card title */
+}
+
+/* Customize Card Button */
+.card .btn {
+  background-color: #28a745; /* Green color for the button */
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+.card .btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transition: background-color 0.3s;
+}
+
+/* Card Text */
+.card-text {
+  color: #6c757d; /* Light gray color for the text */
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .card-container .col-md-4 {
+      flex: 0 0 100%; /* Stack cards vertically on small screens */
+  }
+}
+h1{
+ font-family: Georgia, serif;
+ text-shadow: grey 12px -24px 20px,black -10px 22px 18px
+}
+  i {
+    color: white; /* Orange */
+    font-size: 30px;
+    margin: 10px;
+  }
+
